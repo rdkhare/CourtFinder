@@ -9,66 +9,31 @@ import SwiftUI
 
 struct HomePageView: View {
     var body: some View {
-        NavigationView {
-            VStack {
-                Spacer()
-
-                NavigationLink(destination: ProfileView()) {
+        TabView {
+            ProfileView()
+                .tabItem {
+                    Image(systemName: "person.fill")
                     Text("Profile")
-                        .font(.title2)
-                        .fontWeight(.medium)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                        .padding(.horizontal)
                 }
-                .padding(.bottom, 20)
 
-                NavigationLink(destination: LocateCourtsView()) {
+            LocateCourtsView()
+                .tabItem {
+                    Image(systemName: "map.fill")
                     Text("Locate Courts")
-                        .font(.title2)
-                        .fontWeight(.medium)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                        .padding(.horizontal)
                 }
-                .padding(.bottom, 20)
 
-                NavigationLink(destination: FavoriteCourtsView()) {
+            FavoriteCourtsView()
+                .tabItem {
+                    Image(systemName: "heart.fill")
                     Text("Favorite Courts")
-                        .font(.title2)
-                        .fontWeight(.medium)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                        .padding(.horizontal)
                 }
-                .padding(.bottom, 20)
 
-                NavigationLink(destination: GroupsView()) {
+            GroupsView()
+                .tabItem {
+                    Image(systemName: "person.3.fill")
                     Text("Groups")
-                        .font(.title2)
-                        .fontWeight(.medium)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                        .padding(.horizontal)
                 }
-                .padding(.bottom, 20)
-
-                Spacer()
-            }
-            .padding()
-            .navigationTitle("Home")
         }
+        .accentColor(.blue) // Optional: Change the selected tab color
     }
 }

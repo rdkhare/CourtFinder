@@ -49,15 +49,21 @@ struct LoginView: View {
                     .padding(.horizontal, 40)
                 }
 
-                Text(viewModel.loginStatusMessage)
-                    .foregroundColor(.red)
-                    .padding(.top, 20)
-
                 Spacer()
             }
             .padding()
             .navigationTitle("Sign In")
             .background(Color(.systemBackground).ignoresSafeArea())
+            .fullScreenCover(isPresented: $viewModel.isLoginSuccessful) {
+                HomePageView()
+            }
+            .alert(isPresented: $viewModel.showAlert) {
+                Alert(
+                    title: Text("Login Error"),
+                    message: Text(viewModel.loginStatusMessage),
+                    dismissButton: .default(Text("OK"))
+                )
+            }
         }
     }
 }

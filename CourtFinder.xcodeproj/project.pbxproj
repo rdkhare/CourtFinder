@@ -18,6 +18,26 @@
 		1A5373322C3DA2F00044FC06 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A5373312C3DA2F00044FC06 /* GoogleService-Info.plist */; };
 		1A5373332C3DA2F00044FC06 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A5373312C3DA2F00044FC06 /* GoogleService-Info.plist */; };
 		1A5373342C3DA2F00044FC06 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A5373312C3DA2F00044FC06 /* GoogleService-Info.plist */; };
+		1A8330002C48D3ED0035CD5B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A832FFF2C48D3ED0035CD5B /* LoginViewModel.swift */; };
+		1A8330022C48D4270035CD5B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8330012C48D4270035CD5B /* Utilities.swift */; };
+		1A8330082C48F9900035CD5B /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8330072C48F9900035CD5B /* HomePageView.swift */; };
+		1A83300B2C48FA4D0035CD5B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A83300A2C48FA4D0035CD5B /* ProfileView.swift */; };
+		1A83300D2C48FA750035CD5B /* LocateCourtsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A83300C2C48FA750035CD5B /* LocateCourtsView.swift */; };
+		1A83300F2C48FA870035CD5B /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A83300E2C48FA870035CD5B /* GroupsView.swift */; };
+		1A8330112C48FACA0035CD5B /* FavoriteCourtsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8330102C48FACA0035CD5B /* FavoriteCourtsView.swift */; };
+		1A8330132C4902020035CD5B /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8330122C4902020035CD5B /* ProfileViewModel.swift */; };
+		1A8330172C4902A40035CD5B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8330162C4902A40035CD5B /* ImagePicker.swift */; };
+		1A8330192C4903830035CD5B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 1A8330182C4903830035CD5B /* FirebaseStorage */; };
+		1A83301B2C490EEE0035CD5B /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A83301A2C490EEE0035CD5B /* SessionStore.swift */; };
+		1A83301D2C4918070035CD5B /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A83301C2C4918070035CD5B /* ImageCache.swift */; };
+		1A83301F2C491AA80035CD5B /* ProfileSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A83301E2C491AA80035CD5B /* ProfileSettingsView.swift */; };
+		1A8330212C491E480035CD5B /* ProfileHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8330202C491E480035CD5B /* ProfileHelpers.swift */; };
+		1A8330242C4BAF5B0035CD5B /* EditNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8330232C4BAF5B0035CD5B /* EditNameView.swift */; };
+		1A8330262C4BB2C20035CD5B /* EditUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8330252C4BB2C20035CD5B /* EditUsernameView.swift */; };
+		1A8330292C5728F60035CD5B /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 1A8330282C5728F60035CD5B /* GoogleMaps */; };
+		1A83302C2C572B600035CD5B /* GoogleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A83302B2C572B600035CD5B /* GoogleMapView.swift */; };
+		1A8330302C572E4F0035CD5B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A83302F2C572E4F0035CD5B /* LocationManager.swift */; };
+		1A8330322C5730250035CD5B /* PlacesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8330312C5730250035CD5B /* PlacesService.swift */; };
 		1A84BA282C3D92CC00C1AD45 /* CourtFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84BA272C3D92CC00C1AD45 /* CourtFinderApp.swift */; };
 		1A84BA2C2C3D92CE00C1AD45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A84BA2B2C3D92CE00C1AD45 /* Assets.xcassets */; };
 		1A84BA2F2C3D92CE00C1AD45 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A84BA2E2C3D92CE00C1AD45 /* Preview Assets.xcassets */; };
@@ -46,6 +66,26 @@
 /* Begin PBXFileReference section */
 		1A5373282C3D9FBD0044FC06 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1A5373312C3DA2F00044FC06 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1A832FFD2C46E8CE0035CD5B /* CourtFinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CourtFinder.entitlements; sourceTree = "<group>"; };
+		1A832FFE2C46F17E0035CD5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1A832FFF2C48D3ED0035CD5B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		1A8330012C48D4270035CD5B /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		1A8330072C48F9900035CD5B /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		1A83300A2C48FA4D0035CD5B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		1A83300C2C48FA750035CD5B /* LocateCourtsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocateCourtsView.swift; sourceTree = "<group>"; };
+		1A83300E2C48FA870035CD5B /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
+		1A8330102C48FACA0035CD5B /* FavoriteCourtsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCourtsView.swift; sourceTree = "<group>"; };
+		1A8330122C4902020035CD5B /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		1A8330162C4902A40035CD5B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		1A83301A2C490EEE0035CD5B /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		1A83301C2C4918070035CD5B /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		1A83301E2C491AA80035CD5B /* ProfileSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsView.swift; sourceTree = "<group>"; };
+		1A8330202C491E480035CD5B /* ProfileHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHelpers.swift; sourceTree = "<group>"; };
+		1A8330232C4BAF5B0035CD5B /* EditNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNameView.swift; sourceTree = "<group>"; };
+		1A8330252C4BB2C20035CD5B /* EditUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUsernameView.swift; sourceTree = "<group>"; };
+		1A83302B2C572B600035CD5B /* GoogleMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapView.swift; sourceTree = "<group>"; };
+		1A83302F2C572E4F0035CD5B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		1A8330312C5730250035CD5B /* PlacesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesService.swift; sourceTree = "<group>"; };
 		1A84BA242C3D92CC00C1AD45 /* CourtFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourtFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A84BA272C3D92CC00C1AD45 /* CourtFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtFinderApp.swift; sourceTree = "<group>"; };
 		1A84BA2B2C3D92CE00C1AD45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +107,8 @@
 				1A53732E2C3DA27B0044FC06 /* GoogleSignIn in Frameworks */,
 				1A5373252C3D9D710044FC06 /* FirebaseAuth in Frameworks */,
 				1A5373272C3D9D710044FC06 /* FirebaseFirestore in Frameworks */,
+				1A8330292C5728F60035CD5B /* GoogleMaps in Frameworks */,
+				1A8330192C4903830035CD5B /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +129,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A8330032C48D4A70035CD5B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1A5373282C3D9FBD0044FC06 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		1A8330042C48D4D00035CD5B /* Landing Pages */ = {
+			isa = PBXGroup;
+			children = (
+				1A8330072C48F9900035CD5B /* HomePageView.swift */,
+			);
+			path = "Landing Pages";
+			sourceTree = "<group>";
+		};
+		1A8330092C48F9CF0035CD5B /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				1A83300E2C48FA870035CD5B /* GroupsView.swift */,
+				1A8330102C48FACA0035CD5B /* FavoriteCourtsView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		1A8330142C4902810035CD5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A832FFF2C48D3ED0035CD5B /* LoginViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A8330152C4902960035CD5B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1A8330162C4902A40035CD5B /* ImagePicker.swift */,
+				1A83301A2C490EEE0035CD5B /* SessionStore.swift */,
+				1A83301C2C4918070035CD5B /* ImageCache.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1A8330222C4BAF360035CD5B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1A8330122C4902020035CD5B /* ProfileViewModel.swift */,
+				1A83300A2C48FA4D0035CD5B /* ProfileView.swift */,
+				1A8330202C491E480035CD5B /* ProfileHelpers.swift */,
+				1A83301E2C491AA80035CD5B /* ProfileSettingsView.swift */,
+				1A8330232C4BAF5B0035CD5B /* EditNameView.swift */,
+				1A8330252C4BB2C20035CD5B /* EditUsernameView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1A83302A2C572B480035CD5B /* LocateCourts */ = {
+			isa = PBXGroup;
+			children = (
+				1A83302B2C572B600035CD5B /* GoogleMapView.swift */,
+				1A83300C2C48FA750035CD5B /* LocateCourtsView.swift */,
+				1A83302F2C572E4F0035CD5B /* LocationManager.swift */,
+				1A8330312C5730250035CD5B /* PlacesService.swift */,
+			);
+			path = LocateCourts;
+			sourceTree = "<group>";
+		};
 		1A84BA1B2C3D92CC00C1AD45 = {
 			isa = PBXGroup;
 			children = (
@@ -110,9 +219,18 @@
 		1A84BA262C3D92CC00C1AD45 /* CourtFinder */ = {
 			isa = PBXGroup;
 			children = (
+				1A83302A2C572B480035CD5B /* LocateCourts */,
+				1A8330222C4BAF360035CD5B /* Profile */,
+				1A8330152C4902960035CD5B /* Helpers */,
+				1A8330142C4902810035CD5B /* Models */,
+				1A8330092C48F9CF0035CD5B /* Pages */,
+				1A8330042C48D4D00035CD5B /* Landing Pages */,
+				1A8330032C48D4A70035CD5B /* Login */,
+				1A832FFE2C46F17E0035CD5B /* Info.plist */,
+				1A832FFD2C46E8CE0035CD5B /* CourtFinder.entitlements */,
 				1A5373312C3DA2F00044FC06 /* GoogleService-Info.plist */,
 				1A84BA272C3D92CC00C1AD45 /* CourtFinderApp.swift */,
-				1A5373282C3D9FBD0044FC06 /* LoginView.swift */,
+				1A8330012C48D4270035CD5B /* Utilities.swift */,
 				1A84BA2B2C3D92CE00C1AD45 /* Assets.xcassets */,
 				1A84BA2D2C3D92CE00C1AD45 /* Preview Content */,
 			);
@@ -166,6 +284,8 @@
 				1A5373262C3D9D710044FC06 /* FirebaseFirestore */,
 				1A53732D2C3DA27B0044FC06 /* GoogleSignIn */,
 				1A53732F2C3DA27B0044FC06 /* GoogleSignInSwift */,
+				1A8330182C4903830035CD5B /* FirebaseStorage */,
+				1A8330282C5728F60035CD5B /* GoogleMaps */,
 			);
 			productName = CourtFinder;
 			productReference = 1A84BA242C3D92CC00C1AD45 /* CourtFinder.app */;
@@ -242,6 +362,7 @@
 			packageReferences = (
 				1A5373212C3D9D710044FC06 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				1A53732C2C3DA27B0044FC06 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				1A8330272C5728F60035CD5B /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
 			);
 			productRefGroup = 1A84BA252C3D92CC00C1AD45 /* Products */;
 			projectDirPath = "";
@@ -288,8 +409,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A8330112C48FACA0035CD5B /* FavoriteCourtsView.swift in Sources */,
+				1A83301D2C4918070035CD5B /* ImageCache.swift in Sources */,
+				1A8330262C4BB2C20035CD5B /* EditUsernameView.swift in Sources */,
+				1A83300F2C48FA870035CD5B /* GroupsView.swift in Sources */,
+				1A83301B2C490EEE0035CD5B /* SessionStore.swift in Sources */,
 				1A5373292C3D9FBD0044FC06 /* LoginView.swift in Sources */,
 				1A84BA282C3D92CC00C1AD45 /* CourtFinderApp.swift in Sources */,
+				1A83302C2C572B600035CD5B /* GoogleMapView.swift in Sources */,
+				1A8330132C4902020035CD5B /* ProfileViewModel.swift in Sources */,
+				1A8330212C491E480035CD5B /* ProfileHelpers.swift in Sources */,
+				1A8330022C48D4270035CD5B /* Utilities.swift in Sources */,
+				1A8330322C5730250035CD5B /* PlacesService.swift in Sources */,
+				1A83300D2C48FA750035CD5B /* LocateCourtsView.swift in Sources */,
+				1A8330172C4902A40035CD5B /* ImagePicker.swift in Sources */,
+				1A8330082C48F9900035CD5B /* HomePageView.swift in Sources */,
+				1A83300B2C48FA4D0035CD5B /* ProfileView.swift in Sources */,
+				1A8330002C48D3ED0035CD5B /* LoginViewModel.swift in Sources */,
+				1A83301F2C491AA80035CD5B /* ProfileSettingsView.swift in Sources */,
+				1A8330302C572E4F0035CD5B /* LocationManager.swift in Sources */,
+				1A8330242C4BAF5B0035CD5B /* EditNameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,12 +591,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CourtFinder/CourtFinder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CourtFinder/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = YWZP6R6H47;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CourtFinder/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs access to your location to find nearby courts.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -481,12 +623,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CourtFinder/CourtFinder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CourtFinder/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = YWZP6R6H47;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CourtFinder/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs access to your location to find nearby courts.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -639,6 +784,14 @@
 				minimumVersion = 7.1.0;
 			};
 		};
+		1A8330272C5728F60035CD5B /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -666,6 +819,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1A53732C2C3DA27B0044FC06 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
+		};
+		1A8330182C4903830035CD5B /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A5373212C3D9D710044FC06 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		1A8330282C5728F60035CD5B /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A8330272C5728F60035CD5B /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMaps;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

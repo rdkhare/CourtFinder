@@ -5,4 +5,12 @@
 //  Created by Rajat Khare on 7/18/24.
 //
 
-import Foundation
+import SwiftUI
+
+struct FavoriteCourtsView: View {
+    var body: some View {
+        Text("Favorite Courts Page")
+            .font(.largeTitle)
+            .padding()
+    }
+}
