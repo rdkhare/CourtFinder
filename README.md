@@ -59,21 +59,16 @@ git clone https://github.com/yourusername/CourtFinder.git
 cd CourtFinder
 ```
 
-2. Install dependencies:
+2. Create a `GoogleService-Info.plist` file from your Firebase console and add it to the project
+
+3. Add your Google Maps API key to the Info.plist file under the key `GMSApiKey`
+
+4. Open the `.xcodeproj` file:
 ```bash
-pod install
+open CourtFinder.xcodeproj
 ```
 
-3. Create a `GoogleService-Info.plist` file from your Firebase console and add it to the project
-
-4. Add your Google Maps API key to the Info.plist file under the key `GMSApiKey`
-
-5. Open the `.xcworkspace` file:
-```bash
-open CourtFinder.xcworkspace
-```
-
-6. Build and run the app in Xcode
+5. Build and run the app in Xcode
 
 ## Architecture
 
@@ -102,12 +97,6 @@ CourtFinder follows MVVM (Model-View-ViewModel) architecture:
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Google Maps and Places APIs for court data
-- Firebase for authentication and database services
-- The basketball community for inspiration
 
 ---
 
