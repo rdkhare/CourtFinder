@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>We need your location to show nearby courts even when the app is in the background</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>We need your location to show nearby courts.</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -15,6 +11,12 @@
 			<array>
 				<string>com.googleusercontent.apps.44901944685-u9udp28pol1rd8rckjv88u5uej22eu5q</string>
 			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array/>
 		</dict>
 	</array>
 	<key>GMSApiKey</key>

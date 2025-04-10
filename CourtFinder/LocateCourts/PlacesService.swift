@@ -9,66 +9,85 @@ import Foundation
 import CoreLocation
 
 class PlacesService {
-    private let apiKey = "AIzaSyCKA1J7CfpB49BYhIpCiiWWJTrDOe_B95E"
+    // Replace hardcoded API key with a computed property that gets the key from Info.plist
+    private var apiKey: String {
+        guard let infoPlistPath = Bundle.main.path(forResource: "Info", ofType: "plist"),
+              let infoPlist = NSDictionary(contentsOfFile: infoPlistPath),
+              let key = infoPlist.object(forKey: "GMSApiKey") as? String  else {
+                fatalError("Couldn't find API key in either Info.plist")
+        }
+        return key
+    }
     
     func fetchNearbyCourts(location: CLLocation, completion: @escaping ([Court]) -> Void) {
-            let urlString = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(location.coordinate.latitude),\(location.coordinate.longitude)&radius=2000&type=park&keyword=basketball&key=\(apiKey)"
-            
-            guard let url = URL(string: urlString) else { return }
-
-            URLSession.shared.dataTask(with: url) { data, response, error in
-                guard let data = data, error == nil else { return }
-
-                do {
-                    var result = try JSONDecoder().decode(PlacesResponse.self, from: data)
-                    for index in result.results.indices {
-                        result.results[index].calculateDistance(from: location)
-                    }
-                    completion(result.results)
-                } catch {
-                    print("Error decoding: \(error)")
-                    completion([])
-                }
-            }.resume()
+        var components = URLComponents(string: "https://maps.googleapis.com/maps/api/place/textsearch/json")
+        components?.queryItems = [
+            URLQueryItem(name: "query", value: "basketball courts"),
+            URLQueryItem(name: "location", value: "\(location.coordinate.latitude),\(location.coordinate.longitude)"),
+            URLQueryItem(name: "key", value: apiKey)
+        ]
+        
+        guard let url = components?.url else {
+            print("❌ Invalid URL for text search")
+            completion([])
+            return
         }
-    }
-
-    struct PlacesResponse: Decodable {
-        var results: [Court]
-    }
-
-    struct Court: Decodable, Identifiable {
-        var id = UUID()
-        let name: String
-        let vicinity: String
-        let geometry: Geometry
-
-        var distance: Double?
-
-        struct Geometry: Decodable {
-            let location: Location
-
-            struct Location: Decodable {
-                let lat: Double
-                let lng: Double
+        
+        print("🔍 Fetching courts near (\(location.coordinate.latitude), \(location.coordinate.longitude))")
+        
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            if let error = error {
+                print("❌ API request failed: \(error.localizedDescription)")
+                completion([])
+                return
             }
-        }
-
-        enum CodingKeys: String, CodingKey {
-            case name
-            case vicinity
-            case geometry
-        }
-
-        init(from decoder: Decoder) throws {
-            let container = try decoder.container(keyedBy: CodingKeys.self)
-            name = try container.decode(String.self, forKey: .name)
-            vicinity = try container.decode(String.self, forKey: .vicinity)
-            geometry = try container.decode(Geometry.self, forKey: .geometry)
-        }
-
-        mutating func calculateDistance(from location: CLLocation) {
-            let courtLocation = CLLocation(latitude: geometry.location.lat, longitude: geometry.location.lng)
-            distance = location.distance(from: courtLocation) / 1609.34 // distance in miles
-        }
+            
+            guard let data = data else {
+                print("❌ No data received from API")
+                completion([])
+                return
+            }
+            
+//            // --- ADDED --- Print raw response data as String
+//            if let responseString = String(data: data, encoding: .utf8) {
+//                print("📄 Raw API Response:\n\(responseString)")
+//            } else {
+//                print("⚠️ Could not convert API response data to String")
+//            }
+//            // --- END ADDED ---
+            
+            do {
+                let decoder = JSONDecoder()
+                let result = try decoder.decode(PlacesResponse.self, from: data)
+//                print("✅ Found \(result.results.count) courts")
+                
+                if result.results.isEmpty {
+//                    print("⚠️ No courts found in this area")
+                    completion([])
+                    return
+                }
+                
+                // Calculate distances and sort results
+                var courts = result.results
+                for index in courts.indices {
+                    courts[index].calculateDistance(from: location)
+                }
+                
+                let sortedCourts = courts.sorted { ($0.distance ?? Double.infinity) < ($1.distance ?? Double.infinity) }
+                DispatchQueue.main.async {
+                    completion(sortedCourts)
+                }
+            } catch {
+                print("❌ Failed to decode API response: \(error)")
+                completion([])
+            }
+        }.resume()
     }
+    
+    private struct PlacesResponse: Decodable {
+        let status: String
+        let results: [Court]
+        let html_attributions: [String]
+        let next_page_token: String?
+    }
+}

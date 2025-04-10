@@ -47,7 +47,7 @@ class ProfileViewModel: ObservableObject {
                 }
                 self.groups = data["groups"] as? [String] ?? []
                 self.gamesCheckedIn = data["gamesCheckedIn"] as? [String] ?? []
-                print("User profile fetched successfully.")
+//                print("User profile fetched successfully.")
             } else {
                 self.createUserProfile(uid: uid)
             }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0411BC2DA48D11007F951F /* Court.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0411BB2DA48D11007F951F /* Court.swift */; };
+		1A0411BD2DA48D11007F951F /* Court.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0411BB2DA48D11007F951F /* Court.swift */; };
+		1A0411BE2DA48D11007F951F /* Court.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0411BB2DA48D11007F951F /* Court.swift */; };
+		1A0411C02DA4A00D007F951F /* CourtsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0411BF2DA4A00D007F951F /* CourtsManager.swift */; };
 		1A5373232C3D9D710044FC06 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1A5373222C3D9D710044FC06 /* FirebaseAnalytics */; };
 		1A5373252C3D9D710044FC06 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1A5373242C3D9D710044FC06 /* FirebaseAuth */; };
 		1A5373272C3D9D710044FC06 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1A5373262C3D9D710044FC06 /* FirebaseFirestore */; };
@@ -44,6 +48,8 @@
 		1A84BA392C3D92CE00C1AD45 /* CourtFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84BA382C3D92CE00C1AD45 /* CourtFinderTests.swift */; };
 		1A84BA432C3D92CE00C1AD45 /* CourtFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84BA422C3D92CE00C1AD45 /* CourtFinderUITests.swift */; };
 		1A84BA452C3D92CE00C1AD45 /* CourtFinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84BA442C3D92CE00C1AD45 /* CourtFinderUITestsLaunchTests.swift */; };
+		1AE63C4E2C77B16700082E5C /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE63C4D2C77B16700082E5C /* ToggleButton.swift */; };
+		1AE63C502C77B2D300082E5C /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE63C4F2C77B2D300082E5C /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +70,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A0411BB2DA48D11007F951F /* Court.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Court.swift; sourceTree = "<group>"; };
+		1A0411BF2DA4A00D007F951F /* CourtsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtsManager.swift; sourceTree = "<group>"; };
 		1A5373282C3D9FBD0044FC06 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1A5373312C3DA2F00044FC06 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1A832FFD2C46E8CE0035CD5B /* CourtFinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CourtFinder.entitlements; sourceTree = "<group>"; };
@@ -95,6 +103,8 @@
 		1A84BA3E2C3D92CE00C1AD45 /* CourtFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CourtFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A84BA422C3D92CE00C1AD45 /* CourtFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtFinderUITests.swift; sourceTree = "<group>"; };
 		1A84BA442C3D92CE00C1AD45 /* CourtFinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtFinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1AE63C4D2C77B16700082E5C /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		1AE63C4F2C77B2D300082E5C /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +167,8 @@
 		1A8330142C4902810035CD5B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1A0411BF2DA4A00D007F951F /* CourtsManager.swift */,
+				1A0411BB2DA48D11007F951F /* Court.swift */,
 				1A832FFF2C48D3ED0035CD5B /* LoginViewModel.swift */,
 			);
 			path = Models;
@@ -168,6 +180,8 @@
 				1A8330162C4902A40035CD5B /* ImagePicker.swift */,
 				1A83301A2C490EEE0035CD5B /* SessionStore.swift */,
 				1A83301C2C4918070035CD5B /* ImageCache.swift */,
+				1AE63C4D2C77B16700082E5C /* ToggleButton.swift */,
+				1AE63C4F2C77B2D300082E5C /* ListView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -335,7 +349,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					1A84BA232C3D92CC00C1AD45 = {
 						CreatedOnToolsVersion = 15.4;
@@ -416,6 +430,9 @@
 				1A83301B2C490EEE0035CD5B /* SessionStore.swift in Sources */,
 				1A5373292C3D9FBD0044FC06 /* LoginView.swift in Sources */,
 				1A84BA282C3D92CC00C1AD45 /* CourtFinderApp.swift in Sources */,
+				1AE63C4E2C77B16700082E5C /* ToggleButton.swift in Sources */,
+				1A0411BC2DA48D11007F951F /* Court.swift in Sources */,
+				1AE63C502C77B2D300082E5C /* ListView.swift in Sources */,
 				1A83302C2C572B600035CD5B /* GoogleMapView.swift in Sources */,
 				1A8330132C4902020035CD5B /* ProfileViewModel.swift in Sources */,
 				1A8330212C491E480035CD5B /* ProfileHelpers.swift in Sources */,
@@ -423,6 +440,7 @@
 				1A8330322C5730250035CD5B /* PlacesService.swift in Sources */,
 				1A83300D2C48FA750035CD5B /* LocateCourtsView.swift in Sources */,
 				1A8330172C4902A40035CD5B /* ImagePicker.swift in Sources */,
+				1A0411C02DA4A00D007F951F /* CourtsManager.swift in Sources */,
 				1A8330082C48F9900035CD5B /* HomePageView.swift in Sources */,
 				1A83300B2C48FA4D0035CD5B /* ProfileView.swift in Sources */,
 				1A8330002C48D3ED0035CD5B /* LoginViewModel.swift in Sources */,
@@ -438,6 +456,7 @@
 			files = (
 				1A84BA392C3D92CE00C1AD45 /* CourtFinderTests.swift in Sources */,
 				1A53732A2C3D9FBD0044FC06 /* LoginView.swift in Sources */,
+				1A0411BE2DA48D11007F951F /* Court.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +467,7 @@
 				1A84BA452C3D92CE00C1AD45 /* CourtFinderUITestsLaunchTests.swift in Sources */,
 				1A53732B2C3D9FBD0044FC06 /* LoginView.swift in Sources */,
 				1A84BA432C3D92CE00C1AD45 /* CourtFinderUITests.swift in Sources */,
+				1A0411BD2DA48D11007F951F /* Court.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +522,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = YWZP6R6H47;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -565,6 +586,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = YWZP6R6H47;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -595,16 +617,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CourtFinder/Preview Content\"";
-				DEVELOPMENT_TEAM = YWZP6R6H47;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CourtFinder/Info.plist;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs access to your location to find nearby courts.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to show nearby courts even when the app is in the background";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show nearby courts.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -627,16 +650,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CourtFinder/Preview Content\"";
-				DEVELOPMENT_TEAM = YWZP6R6H47;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CourtFinder/Info.plist;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs access to your location to find nearby courts.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to show nearby courts even when the app is in the background";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show nearby courts.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -653,11 +677,9 @@
 		1A84BA4C2C3D92CE00C1AD45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YWZP6R6H47;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
@@ -673,11 +695,9 @@
 		1A84BA4D2C3D92CE00C1AD45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YWZP6R6H47;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
@@ -693,10 +713,8 @@
 		1A84BA4F2C3D92CE00C1AD45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YWZP6R6H47;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rdkhare.CourtFinderUITests;
@@ -711,10 +729,8 @@
 		1A84BA502C3D92CE00C1AD45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YWZP6R6H47;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rdkhare.CourtFinderUITests;

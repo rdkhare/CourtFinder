@@ -17,7 +17,7 @@ struct CourtFinderApp: App {
     @StateObject private var sessionStore = SessionStore()
 
     init() {
-        FirebaseApp.configure()
+        // Firebase will be configured in AppDelegate
     }
 
     var body: some Scene {
@@ -35,7 +35,12 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         return GIDSignIn.sharedInstance.handle(url)
     }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Initialize Firebase first
+        FirebaseApp.configure()
+        
+        // Configure Google Maps
         if let path = Bundle.main.path(forResource: "Info", ofType: "plist"),
            let dict = NSDictionary(contentsOfFile: path),
            let apiKey = dict["GMSApiKey"] as? String {

@@ -8,6 +8,16 @@
 import SwiftUI
 
 struct HomePageView: View {
+    @StateObject private var courtsManager = CourtsManager() // Create CourtsManager instance
+    
+    init() {
+        let appearance = UITabBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UIColor.white
+        UITabBar.appearance().standardAppearance = appearance
+        UITabBar.appearance().scrollEdgeAppearance = appearance
+    }
+    
     var body: some View {
         TabView {
             ProfileView()
@@ -34,6 +44,7 @@ struct HomePageView: View {
                     Text("Groups")
                 }
         }
+        .environmentObject(courtsManager) // Inject CourtsManager into environment
         .accentColor(.blue) // Optional: Change the selected tab color
     }
 }

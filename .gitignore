@@ -1,0 +1,50 @@
+# === Xcode files ===
+*.xcuserstate
+*.xcscmblueprint
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# === Derived data and build artifacts ===
+DerivedData/
+build/
+*.ipa
+*.app
+*.dSYM/
+
+# === SwiftPM cache ===
+.swiftpm/
+.build/
+
+# === CocoaPods ===
+Pods/
+
+# === Carthage ===
+Carthage/Build/
+
+# === Fastlane ===
+fastlane/report.xml
+fastlane/screenshots
+fastlane/test_output
+
+# === Firebase ===
+GoogleService-Info.plist
+
+# === Xcode’s preview data ===
+*.preview-thumbnails
+
+# === User data ===
+*.moved-aside
+*.swp
+*.lock
+*.DS_Store
+
+# === IDE/editor specific ===
+.vscode/
+.idea/
+
+# === Logs ===
+*.log
+
+# === Environment files ===
+.env
